@@ -6,7 +6,7 @@ function Footer() {
 	return (
 		<footer className="py-3 border-t border-solid border-gray-200 bg-[#f2f2f2]">
 			<div className="container">
-				<div className="flex justify-between items-center mb-2">
+				<div className="flex gap-4 flex-col items-center mb-4 md:mb-2 md:flex-row justify-between">
 					<Logo />
 					<Nav />
 					<Social />

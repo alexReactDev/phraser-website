@@ -1,6 +1,6 @@
 function Nav() {
 	return (
-		<ul className="flex gap-6 text-gray-700">
+		<ul className="flex flex-col items-center text-gray-700 gap-[10px] md:flex-row md:gap-6">
 			<li className="list-none">
 				<a href="#home" className="hover:text-[#555] active:text-fontColor-0">
 					Home
