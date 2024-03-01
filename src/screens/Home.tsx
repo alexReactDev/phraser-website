@@ -1,8 +1,8 @@
 function Home() {
 	return (
-		<div className="box-border h-[100vh] pt-20 bg-[url('/images/home/bg.jpg')] bg-cover bg-center bg-no-repeat">
-			<div className="container h-full">
-				<div className="flex h-full justify-center">
+		<div className="pt-20 bg-[url('/images/home/bg.jpg')] bg-cover bg-center bg-no-repeat">
+			<div className="container">
+				<div className="flex min-h-[100vh] justify-center">
 					<div className="lg:w-1/2 flex flex-col justify-center">
 						<h1 className="mb-12 font-accent text-4xl/[1.2em] xm:text-5xl/[1.2em] text-white text-center md:text-start">
 							Phraser - AI vocabulary builder
