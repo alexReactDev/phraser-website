@@ -1,8 +1,10 @@
+import Home from "@/screens/Home";
+
 function Main() {
 	return (
-		<div>
-			Main content
-		</div>
+		<>
+			<Home />
+		</>
 	)
 }
 

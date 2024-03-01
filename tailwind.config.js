@@ -18,6 +18,10 @@ module.exports = {
       },
       colors: {
         fontColor: ['var(--font-color)']
+      },
+      screens: {
+        "2xm": "375px",
+        "xm": "450px"
       }
     },
   },
