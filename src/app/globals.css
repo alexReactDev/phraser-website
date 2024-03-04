@@ -9,12 +9,17 @@
 :root {
   --font-default: "Roboto";
   --font-accent: "Roboto Slab";
-  --font-color: "#333";
+  --font-color: "#444";
 }
 
 body {
   font-family: "Roboto";
   color: var(--font-color);
+  line-height: 1.7em;
+
+  @media (max-width: 379px) {
+    line-height: 1.5em;
+  }
 }
 
 .container {
