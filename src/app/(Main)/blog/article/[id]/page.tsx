@@ -1,16 +1,19 @@
 import db from "@/model/db";
 import { IArticle } from "../../../../../../types/article";
-import Picture from "@/components/article/Picture";
-import Subtitle from "@/components/article/Subtitle";
+import ArticleContent from "@/components/article/ArticleContent";
+import { redirect } from "next/navigation";
 
 async function BlogPage({ params }: { params: { id: string }}) {
 	const article: IArticle = await db.collection("articles").findOne({ id: params.id });
+	
+	if(!article) redirect("/not-found");
+
 	const date = new Date(article.created);
 
 	return (
 		<div className="pt-20">
 			<div className="container">
-				<div className="my-5 py-3 px-3 xm:px-5 border border-solid border-gray-200 bg-gray-100">
+				<div className="my-5 py-3 px-3 xm:px-5 border border-solid border-gray-200 bg-gray-50 shadow-sm">
 					<h1 className="mb-2 text-xl 2xm:text-2xl">
 						{article.title}
 					</h1>
@@ -22,21 +25,7 @@ async function BlogPage({ params }: { params: { id: string }}) {
 					}
 					<div className="my-4 xm:my-5 px-1 2xm:px-3 xm:px-5">
 						{
-							article.content.map((content, idx) => {
-								if(content.type === "image") {
-									return <Picture key={idx} image={content} />
-								} else if(content.type === "subtitle") {
-									return <Subtitle key={idx} subtitle={content} />
-								} else {
-									return (
-										<p key={idx} className="text-[15px] text-center md:text-start 2xm:text-[16px]">
-											{
-												content.content
-											}
-										</p>
-									)
-								}
-							})
+							<ArticleContent content={article.content} />
 						}
 					</div>
 					<div className="mt-3 flex justify-end">
