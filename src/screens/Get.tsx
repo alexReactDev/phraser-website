@@ -8,7 +8,7 @@ function GetScreen() {
 					<h2 className="mb-5 text-white text-4xl xm:text-5xl text-center">
 						Get it now
 					</h2>
-					<Get />
+					<Get itemsCenter />
 				</div>
 			</div>
 		</div>

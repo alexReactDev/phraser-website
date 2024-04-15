@@ -12,7 +12,7 @@ function Nav() {
 				</a>
 			</li>
 			<li className="flex justify-center items-center grow list-none active:bg-gray-100 md:active:bg-inherit">
-				<a href="/#download" className="hover:text-[#555] active:text-fontColor-0">
+				<a href="/download" className="hover:text-[#555] active:text-fontColor-0">
 					Download
 				</a>
 			</li>
