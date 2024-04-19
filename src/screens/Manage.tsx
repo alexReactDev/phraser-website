@@ -1,6 +1,6 @@
 function Manage() {
 	return (
-		<div className="bg-white">
+		<div id="features" className="bg-white">
 			<div className="container">
 				<div className="min-h-[100vh] py-8 flex flex-col-reverse items-center justify-center gap-5 2xm:gap-8 lg:flex-row lg:gap-0 lg:items-stretch">
 					<div className="w-3/4 2xm:w-2/3 sm:w-1/2 flex flex-col justify-center items-center lg:items-start">

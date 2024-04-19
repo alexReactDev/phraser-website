@@ -2,7 +2,7 @@ import Get from "@/components/Get";
 
 function Home() {
 	return (
-		<div className="pt-20 bg-[url('/images/home/bg.jpg')] bg-cover bg-center bg-no-repeat">
+		<div id="home" className="pt-20 bg-[url('/images/home/bg.jpg')] bg-cover bg-center bg-no-repeat">
 			<div className="container">
 				<div className="flex min-h-[100vh] justify-center">
 					<div className="lg:w-1/2 flex flex-col justify-center">

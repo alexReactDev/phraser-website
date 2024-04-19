@@ -12,6 +12,10 @@
   --font-color: "#444";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto";
   color: var(--font-color);
